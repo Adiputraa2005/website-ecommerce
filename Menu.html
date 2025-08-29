@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - KopiKita</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- Floating Navbar -->
+    <nav class="floating-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">Kopi<span>Kita.</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Menu.html" class="nav-link active">
+                        <i class="fas fa-coffee"></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="member.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Member</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Checkout</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="menu-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Menu Kami</h1>
+            <p class="hero-subtitle">Nikmati berbagai pilihan minuman dan makanan premium dengan kualitas terbaik</p>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="coffee">
+                    <i class="fas fa-coffee"></i>
+                    <span>Coffee Based</span>
+                </button>
+                <button class="category-tab" data-category="non-coffee">
+                    <i class="fas fa-leaf"></i>
+                    <span>Non-Coffee</span>
+                </button>
+                <button class="category-tab" data-category="food">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <span>Juicy Mood</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Based Section -->
+    <section class="menu-section active" id="coffee">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-coffee"></i> Coffee Based</h2>
+                <p>Nikmati berbagai varian kopi premium dengan biji kopi pilihan</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/iced latte.png" alt="Iced Latte">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Latte" data-price="20000" data-img="img/iced latte.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">BEST SELLER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Latte</h3>
+                        <p class="product-description">Espresso dengan susu segar yang lembut dan creamy</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 100052.png" alt="Iced Shaken Blacklychcee">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Shaken Blacklychcee" data-price="20000" data-img="img/Screenshot 2025-07-19 100052.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Shaken Blacklychcee</h3>
+                        <p class="product-description">Kopi hitam yang disajikan dengan cara shaken untuk tekstur yang unik</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 100549.png" alt="Gula Aren Coffee">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Gula Aren Coffee" data-price="20000" data-img="img/Screenshot 2025-07-19 100549.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">TRADITIONAL</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Gula Aren Coffee</h3>
+                        <p class="product-description">Kopi tradisional dengan gula aren asli yang memberikan rasa manis alami</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 100728.png" alt="Iced Palm Sugar Latte">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Palm Sugar Latte" data-price="20000" data-img="img/Screenshot 2025-07-19 100728.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Palm Sugar Latte</h3>
+                        <p class="product-description">Latte dengan gula kelapa yang memberikan rasa manis dan karamel</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 100907.png" alt="Iced Shaken Creamy Latte">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Shaken Creamy Latte" data-price="20000" data-img="img/Screenshot 2025-07-19 100907.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Shaken Creamy Latte</h3>
+                        <p class="product-description">Latte yang di-shake untuk menghasilkan tekstur creamy yang lembut</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 101027.png" alt="Iced Long Black">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Long Black" data-price="20000" data-img="img/Screenshot 2025-07-19 101027.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Long Black</h3>
+                        <p class="product-description">Kopi hitam yang disajikan dengan air panas kemudian didinginkan</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 101005.png" alt="Hot Almond Latte">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Hot Almond Latte" data-price="20000" data-img="img/Screenshot 2025-07-19 101005.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hot Almond Latte</h3>
+                        <p class="product-description">Latte hangat dengan susu almond yang memberikan rasa kacang yang unik</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Non-Coffee Section -->
+    <section class="menu-section" id="non-coffee">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-leaf"></i> Non-Coffee</h2>
+                <p>Pilihan minuman segar tanpa kafein untuk semua kalangan</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-18 094935.png" alt="Iced Lemon Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Lemon Tea" data-price="20000" data-img="img/Screenshot 2025-07-18 094935.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">REFRESHING</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Lemon Tea</h3>
+                        <p class="product-description">Teh hitam dengan lemon segar yang menyegarkan</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/iced chamonile.png" alt="Iced Chamomile">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Chamomile" data-price="20000" data-img="img/iced chamonile.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Chamomile</h3>
+                        <p class="product-description">Teh chamomile yang menenangkan dengan es batu</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/iced black tea.png" alt="Iced Earl Grey Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Earl Grey Tea" data-price="20000" data-img="img/iced black tea.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Earl Grey Tea</h3>
+                        <p class="product-description">Teh hitam dengan aroma bergamot yang khas</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/iced rose tea.png" alt="Iced Rose Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Rose Tea" data-price="20000" data-img="img/iced rose tea.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">FLORAL</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Rose Tea</h3>
+                        <p class="product-description">Teh dengan kelopak mawar yang memberikan aroma bunga yang lembut</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/iced brew lycheetea.png" alt="Iced Lychee Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Iced Lychee Tea" data-price="20000" data-img="img/iced brew lycheetea.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Iced Lychee Tea</h3>
+                        <p class="product-description">Teh dengan buah leci yang memberikan rasa manis dan segar</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/hot chamonile.png" alt="Hot Chamomile">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Hot Chamomile" data-price="20000" data-img="img/hot chamonile.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hot Chamomile</h3>
+                        <p class="product-description">Teh chamomile hangat yang menenangkan pikiran</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/hot rose tea.png" alt="Hot Rose Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Hot Rose Tea" data-price="20000" data-img="img/hot rose tea.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hot Rose Tea</h3>
+                        <p class="product-description">Teh mawar hangat dengan aroma bunga yang lembut</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/hot earl grey tea.png" alt="Hot Lemon Tea">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Hot Lemon Tea" data-price="20000" data-img="img/hot earl grey tea.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hot Lemon Tea</h3>
+                        <p class="product-description">Teh lemon hangat yang menyegarkan dan menyehatkan</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 20.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juicy Mood Section -->
+    <section class="menu-section" id="food">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-glass-whiskey"></i> Juicy Mood</h2>
+                <p>Minuman segar dengan kombinasi buah-buahan yang unik dan menyegarkan</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 110318.png" alt="Aurora">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Aurora" data-price="25000" data-img="img/Screenshot 2025-07-19 110318.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">SIGNATURE</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Aurora</h3>
+                        <p class="product-description">Minuman segar dengan gradasi warna yang indah seperti aurora</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 25.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 110307.png" alt="Sunset">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Sunset" data-price="25000" data-img="img/Screenshot 2025-07-19 110307.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">POPULAR</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sunset</h3>
+                        <p class="product-description">Minuman dengan warna gradasi orange yang menyerupai matahari terbenam</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 25.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Screenshot 2025-07-19 110654.png" alt="Kiwi Pandan">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-name="Kiwi Pandan" data-price="25000" data-img="img/Screenshot 2025-07-19 110654.png">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="product-badge">FRESH</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kiwi Pandan</h3>
+                        <p class="product-description">Kombinasi buah kiwi segar dengan aroma pandan yang khas</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 25.000</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Kopi <span>Kita.</span></h3>
+                        <p>Nikmati pengalaman kopi terbaik dengan biji kopi premium dari berbagai penjuru Indonesia</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="member.html">Member</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kopi No. 123, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@kopikita.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 KopiKita. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/Menu.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Toko Kopi</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- Header Section -->
+        <div class="checkout-header">
+            <div class="back-button">
+                <a href="Menu.html"><i class="fas fa-arrow-left"></i> Kembali ke Menu</a>
+            </div>
+            <h1><i class="fas fa-shopping-cart"></i> Checkout Pesanan</h1>
+            <p class="subtitle">Lengkapi informasi untuk menyelesaikan pesanan Anda</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-step active">
+                <div class="step-icon"><i class="fas fa-shopping-cart"></i></div>
+                <span>Keranjang</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step active">
+                <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                <span>Checkout</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step">
+                <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                <span>Selesai</span>
+            </div>
+        </div>
+
+        <div class="checkout-wrapper">
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <div class="summary-header">
+                    <h2><i class="fas fa-receipt"></i> Ringkasan Pesanan</h2>
+                    <span class="item-count">0 item</span>
+                </div>
+                
+                <div class="cart-items-container">
+                    <ul class="cart-items" id="cart-items">
+                        <!-- Cart items will be populated by JavaScript -->
+                    </ul>
+                </div>
+
+                <div class="summary-footer">
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-price">Rp 0</span>
+                    </div>
+                    <div class="delivery-fee">
+                        <span>Biaya Pengiriman:</span>
+                        <span>Rp 5.000</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="total">
+                        <span>Total Pembayaran:</span>
+                        <span id="total-price" class="total-price">Rp 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkout Form Section -->
+            <div class="checkout-form">
+                <div class="form-header">
+                    <h2><i class="fas fa-user-edit"></i> Informasi Pengiriman</h2>
+                    <p>Pastikan data yang diisi sudah benar</p>
+                </div>
+
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="fullname"><i class="fas fa-user"></i> Nama Lengkap</label>
+                        <input type="text" id="fullname" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" placeholder="contoh@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Nomor Telepon</label>
+                        <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address"><i class="fas fa-map-marker-alt"></i> Alamat Pengiriman</label>
+                        <textarea id="address" placeholder="Masukkan alamat lengkap pengiriman" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes"><i class="fas fa-sticky-note"></i> Catatan (Opsional)</label>
+                        <textarea id="notes" placeholder="Catatan khusus untuk pesanan" rows="2"></textarea>
+                    </div>
+
+                    <!-- FIXED PAYMENT METHOD -->
+                    <div class="form-group">
+                    <label for="payment-method"><i class="fas fa-credit-card"></i> Metode Pembayaran</label>
+                    <select id="payment-method" required>
+                        <option value="">-- Pilih Metode Pembayaran --</option>
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="ewallet">E-Wallet</option>
+                    </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" onclick="window.history.back()">
+                            <i class="fas fa-arrow-left"></i> Kembali
+                        </button>
+                        <button type="submit" class="btn-checkout">
+                            <i class="fas fa-lock"></i> Bayar Sekarang
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Security Notice -->
+        <div class="security-notice">
+            <i class="fas fa-shield-alt"></i>
+            <span>Pembayaran Anda aman dan terenkripsi. Kami tidak menyimpan informasi kartu kredit Anda.</span>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

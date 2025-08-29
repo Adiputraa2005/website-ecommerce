@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('img/gambar kopi hal utama.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.login_container {
+    width: 100%;
+    max-width: 400px;
+    padding: 60px 60px 50px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+h2 {
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.input-group input {
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    width: 260px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid chocolate;
+    background-color: #fdfdfd;
+}
+
+.login_container button {
+    display: block;
+    width: 260px;
+    margin: 10px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-login {
+    color: white;
+    background-color: black;
+}
+
+.btn-login-google {
+    background-color: white;
+}
+
+.register-link {
+    text-align: center;
+    color: rgb(2, 1, 0);
+    font-size: small;
+    margin-top: 10px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: rgb(91, 52, 11);
+}
+
+.Logo {
+    background-color: black;
+    color: white;
+    padding: 60px 30px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-name {
+    text-align: center;
+}
+
+#navbar-logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#navbar-logo span {
+    color: chocolate;
+}
+
+.Logo p {
+    margin-top: 20px;
+    font-size: 13px;
+    color: aliceblue;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Logo {
+        border-radius: 0 0 10px 10px;
+        padding: 40px 20px;
+        max-width: none;
+        width: 100%;
+    }
+
+    .login_container {
+        border-radius: 10px 10px 0 0;
+    }
+}

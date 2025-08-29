@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Kita - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- Floating Navbar -->
+    <nav class="floating-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">Kopi<span>Kita.</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Menu.html" class="nav-link">
+                        <i class="fas fa-coffee"></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="member.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Member</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Checkout</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang di Kopi Kita</h1>
+            <p class="hero-subtitle">Nikmati pengalaman kopi terbaik dengan biji kopi premium dari berbagai penjuru Indonesia</p>
+            <div class="hero-buttons">
+                <a href="Menu.html" class="btn btn-primary">
+                    <i class="fas fa-coffee"></i>
+                    Lihat Menu
+                </a>
+                <a href="member.html" class="btn btn-secondary">
+                    <i class="fas fa-user-plus"></i>
+                    Daftar Member
+                </a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Promo Carousel Section -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Promo Spesial</h2>
+                <p>Dapatkan penawaran terbaik untuk member setia kami</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <div class="promo-card">
+                            <div class="promo-image">
+                                <img src="img/hot earl grey tea.png" alt="Promo 12.12">
+                                <div class="promo-badge">HOT DEAL</div>
+                            </div>
+                            <div class="promo-content">
+                                <h3>Promo 12.12</h3>
+                                <p>Diskon hingga 50% untuk <br>semua kopi premium</p>
+                                <div class="promo-details">
+                                    <span class="promo-date"><i class="fas fa-calendar"></i> 12-15 Desember 2024</span>
+                                    <span class="promo-code"><i class="fas fa-tag"></i> KODE: KOPI12</span>
+                                </div>
+                                <button class="btn btn-promo" onclick="showPromoDetails('12.12')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Info Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="promo-card">
+                            <div class="promo-image">
+                                <img src="img/iced latte.png" alt="Promo Member">
+                                <div class="promo-badge">MEMBER ONLY</div>
+                            </div>
+                            <div class="promo-content">
+                                <h3>Promo Member</h3>
+                                <p>Buy 2 Get 1 Free untuk member setia</p>
+                                <div class="promo-details">
+                                    <span class="promo-date"><i class="fas fa-calendar"></i> Setiap Senin</span>
+                                    <span class="promo-code"><i class="fas fa-tag"></i> KODE: MEMBER2X1</span>
+                                </div>
+                                <button class="btn btn-promo" onclick="showPromoDetails('Member')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Info Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="promo-card">
+                            <div class="promo-image">
+                                <img src="img/hot earl grey tea.png" alt="Promo Weekend">
+                                <div class="promo-badge">WEEKEND</div>
+                            </div>
+                            <div class="promo-content">
+                                <h3>Promo Weekend</h3>
+                                <p>Diskon 30% untuk semua menu non-kopi</p>
+                                <div class="promo-details">
+                                    <span class="promo-date"><i class="fas fa-calendar"></i> Setiap Sabtu-Minggu</span>
+                                    <span class="promo-code"><i class="fas fa-tag"></i> KODE: WEEKEND30</span>
+                                </div>
+                                <button class="btn btn-promo" onclick="showPromoDetails('Weekend')">
+                                    <i class="fas fa-info-circle"></i>
+                                    Info Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2><i class="fas fa-heart"></i> Our Story</h2>
+                        <p>Cerita di balik secangkir kopi terbaik</p>
+                    </div>
+                    <p class="about-description">
+                        Kami adalah perusahaan kopi yang mendedikasikan seluruh gairah, kecintaan, dan antusiasme kami kepada dunia kopi yang menakjubkan. Kami adalah perusahaan lokal dan sebagian besar bahan baku yang kami gunakan adalah lokal. Ya, dan kami mengatakan hal tersebut dengan bangga.
+                    </p>
+                    <p class="about-description">
+                        Kami tahu, begitu juga Anda, bahwa biji-biji kopi terbaik dunia berasal dari Indonesia. Kami berkeliling ke berbagai pelosok Indonesia dan bekerja sama dengan para petani dan pemanggang kopi lokal untuk mendapatkan citarasa kopi terbaik Indonesia, biji kopi arabika grade satu dan berbagai perkebunan yang tersebar di Nusantara.
+                    </p>
+                    <a href="articles.html" class="btn btn-outline">
+                        <i class="fas fa-book-open"></i>
+                        Baca Artikel
+                    </a>
+                </div>
+                <div class="about-image">
+                    <img src="img/barista.jpeg" alt="Barista Kopi Kita">
+                    <div class="image-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-utensils"></i> Our Menu</h2>
+                <p>From the best Indonesian specialty coffee to heart warming foods</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="img/bijikopi.jpg" alt="Our Beans">
+                        <div class="menu-overlay">
+                            <a href="Menu.html" class="btn btn-sm">Lihat Menu</a>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3><i class="fas fa-seedling"></i> Our Beans</h3>
+                        <p>Biji kopi grade Specialty Arabica dan Fine Robusta dari 9 perkebunan terbaik Indonesia</p>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="img/Tips dari Ahli, Buat Cromboloni Viral Anti Gagal!.jpeg" alt="Coffee-Based Drinks">
+                        <div class="menu-overlay">
+                            <a href="Menu.html" class="btn btn-sm">Lihat Menu</a>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3><i class="fas fa-coffee"></i> Coffee-Based Drinks</h3>
+                        <p>Dari minuman tradisional berbasis espresso sampai berbagai minuman racikan kopi terkini</p>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="img/lemon-tea-selasih.jpg" alt="Non-Coffee">
+                        <div class="menu-overlay">
+                            <a href="Menu.html" class="btn btn-sm">Lihat Menu</a>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3><i class="fas fa-leaf"></i> Non-Coffee</h3>
+                        <p>Kami juga memiliki menu non-coffee untuk kamu yang ingin pilihan lain selain kopi dan untuk anak-anak</p>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="img/Kopken-LB-Blog-1024x766.png" alt="Food & Snack">
+                        <div class="menu-overlay">
+                            <a href="Menu.html" class="btn btn-sm">Lihat Menu</a>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3><i class="fas fa-hamburger"></i> Food & Snack</h3>
+                        <p>Berbagai macam makanan ringan sampai makanan utama siap menemani secangkir kopimu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Kopi <span>Kita.</span></h3>
+                        <p>Nikmati pengalaman kopi terbaik dengan biji kopi premium dari berbagai penjuru Indonesia</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="member.html">Member</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kopi No. 123, Jakarta</p>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@kopikita.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps Dummy -->
+            <div class="maps-section">
+                <h4><i class="fas fa-map"></i> Lokasi Kami</h4>
+                <div class="maps-container">
+                    <div class="maps-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h5>Google Maps</h5>
+                        <p>Jl. Kopi No. 123, Jakarta Selatan, DKI Jakarta 12345</p>
+                        <button class="btn btn-maps" onclick="openMaps()">
+                            <i class="fas fa-directions"></i>
+                            Buka di Maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 KopiKita. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Promo Modal -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
